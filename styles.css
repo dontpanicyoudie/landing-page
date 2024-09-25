@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     font-family: Arial, Helvetica, sans-serif;
   }
   
@@ -13,8 +13,7 @@
     justify-content: center;
   }
   
-  .menu {
-    /* border: 1px solid #fff;   For debugging */
+   .menu {
     width: 900px;
     display: flex;
     justify-content: space-between;
@@ -35,11 +34,11 @@
     list-style-type: none;
     color: #E5E7EB;
     font-size: 18px;
-    margin-left: 10px;
   }
 
   .header-links > * {
     margin: 10px 20px;
+    margin-right: 0px;
   }
 
   .hero-container {
@@ -47,7 +46,6 @@
     color: #F9FAF8;
     display: flex;
     justify-content: center;
-
   }
 
   .hero {
@@ -69,12 +67,13 @@
     font-size: 48px;
     font-weight: 900;
     color: #F9FAF8;
+    margin: 10px 0;
   }
 
   .subtext {
     color: #E5E7EB;
     font-size: 18px;
-
+    margin: 10px 0;
   }
 
   .button {
@@ -84,11 +83,62 @@
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 18px;    
+    margin: 10px 0;
   }
 
   .hero-image {
     display: flex;
     height: 300px;
     width: auto;
+  }
+
+  .information-container {
+    background-color: #F9FAF8;
+    display: flex;
+    justify-content: center;
+  }
+
+  .information {
+    border: 1px solid #f70303; /* for debugging */
+    width: 900px;
+    height: 400px;
+    justify-content: center;
+  }
+
+  .information-header-text {
+    border: 1px solid #ec1414; /* for debugging */
+    display: flex;
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .photo-grid {
+    border: 1px solid #ee0a0a; /* for debugging */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .photo-grid-item {
+    display: flex;
+    box-sizing: border-box;
+    border: 5px solid #3882F6;
+    border-radius: 15px;
+    width: 125px;
+    justify-content: center;
+    align-items: center;
+    height: 125px;
+    margin: 10px;
+  }
+
+  .photo-grid-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
   }
